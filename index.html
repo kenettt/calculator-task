@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./app/scss/style.css" />
+    <title>Web expert | Compensation Calculator</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="main__container">
+          <div class="content">
+            <h1>Quam Tristique Condimentum</h1>
+            <div style="margin:20px 0 40px 0;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <span style="color:red">Curabitur</span> blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</div>
+            <div style="display: flex; flex-wrap: wrap;">
+              <div style="max-width: 380px; margin-right:20px;">
+                <h2>Fringilla Euismod Adipiscing Ipsum</h2>
+                <div style="margin:20px 0;">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.</div>
+                <div class="list">
+                  <div class="bullet__red"></div> 
+                  <div>Tellus Ullamcorper Inceptos</div>
+                </div>
+                <div class="list">
+                  <div class="bullet__red"></div> 
+                  <div>Magna Condimentum</div>
+                </div>
+                <div class="list">
+                  <div class="bullet__white"></div> 
+                  <div>Mattis Tristique</div>
+                </div>
+                <div class="list">
+                  <div class="bullet__white"></div> 
+                  <div>Pharetra Pellentesque Dapibus</div>
+                </div>
+                <div class="list">
+                  <div class="bullet__red"></div> 
+                  <div>Aenean Inceptos</div>
+                </div>
+                <div class="list">
+                  <div class="bullet__red"></div> 
+                  <div>Parturient Bibendum</div>
+                </div>
+              </div>
+              <img src="./app/assets/Image.jpg" width="240" height="180"/>
+            </div>
+          </div>     
+          <div class="calculator__container">
+            <h4>Compensation Calculator</h4>
+            <form onsubmit="calculate(event)">
+                <div class="input__container">
+                  <label for="income">Avarage income</label>
+                  <div class="icon">
+                    <input type="number" id="income" name="income" placeholder="0" />
+                    <span class="fa-icon">€</span>
+                  </div>
+                </div>
+                <div class="input__container">
+                  <label for="daysOfSick">Days on sick-leave</label>
+                  <div class="icon">
+                    <input type="number" id="daysOfSick" name="daysOfSick" placeholder="0"/>
+                    <span class="fa-icon">days</span>
+                  </div>
+                </div>
+                <div class="checkbox__container">
+                  <input type="checkbox" class="checkBox" id="tubercolosis" name="tubercolosis" />
+                  <label for="tubercolosis">I have tubercolosis</label>
+                </div>
+                <button id="submit" type="submit">Calculate</button>
+            </form>
+            <div class="divider"></div>
+            <div class="calculation__container">
+              <div style="display:flex; justify-content:space-evenly;">
+                <div class="calculation">
+                  <div>The employer compensates</div>
+                  <div class="employer__days">0 days</div>
+                  <div class="employer__total">0.00€</div>
+                  <div class="daily__allowance">Daily allowance</div>
+                  <div class="daily__allowance__amount">0.00 €</div>
+                </div>
+                <div class="calculation">
+                  <div>Health Insurance compensates</div>
+                  <div class="health__days">0 days</div>
+                  <div class="health__total">0.00€</div>
+                  <div class="daily__allowance">Daily allowance</div>
+                  <div class="daily__allowance__amount">0.00 €</div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="total">
+                <div>Compensation total for 7 days</div>
+                <div class="total__amount">0.00€</div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <script src="./app/js/script.js"></script>
+  </body>
+</html>
